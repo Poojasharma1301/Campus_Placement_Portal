@@ -360,14 +360,12 @@ i {
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
    
-    <script>(function () {
+     <script>(function () {
       'use strict'
     
       // Fetch all the forms we want to apply custom Bootstrap validation styles to
       var forms = document.querySelectorAll('.needs-validation')
-    	document.getElementById("button").addEventListener("click", function(event){
-  		event.preventDefault()
-	});
+    
       // Loop over them and prevent submission
       Array.prototype.slice.call(forms)
         .forEach(function (form) {
