@@ -143,7 +143,7 @@
 	</div>
 
 	
-<button  type="submit " class="btn btn-lg btn-info mb-5 ml-5" style="box-shadow: 0 4px 15px 0 rgb(28, 112, 157); background-image: linear-gradient(to right, rgb(28, 112, 157), #6f7c94, #b3bdc0, #5c6f8b); text-align: center;">Click and Predict Placed or not?</button>
+<button  type="submit " id="button" class="btn btn-lg btn-info mb-5 ml-5" style="box-shadow: 0 4px 15px 0 rgb(28, 112, 157); background-image: linear-gradient(to right, rgb(28, 112, 157), #6f7c94, #b3bdc0, #5c6f8b); text-align: center;">Click and Predict Placed or not?</button>
 	
 </form>	
 
@@ -365,7 +365,9 @@ i {
     
       // Fetch all the forms we want to apply custom Bootstrap validation styles to
       var forms = document.querySelectorAll('.needs-validation')
-    
+    	document.getElementById("button").addEventListener("click", function(event){
+  		event.preventDefault()
+	});
       // Loop over them and prevent submission
       Array.prototype.slice.call(forms)
         .forEach(function (form) {
